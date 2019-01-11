@@ -91,7 +91,7 @@ to get the CUDA version
 
 ## 5. Install cuDNN
 
-This are the instructions from [1]:
+These are the instructions from [1]:
 
 "Next, head to https://developer.nvidia.com/cudnn to get CUDNN 7.0. Go
 to the downloads archive page again and find version 7.0 for CUDA 9.0
