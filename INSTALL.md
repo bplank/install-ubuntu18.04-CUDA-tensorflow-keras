@@ -98,15 +98,15 @@ that you just installed. Download the link that says “cuDNN v7.0.5
 Library for Linux”. This will download an archive that you can unpack
 and move the contents the correct locations."
 
-`tar -zxvf cudnn-9.0-linux-x64-v7.tgz`
+```
+tar -zxvf cudnn-9.0-linux-x64-v7.tgz`
 
-`
 # Move the unpacked contents to your CUDA directory
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.0/lib64/
 sudo cp  cuda/include/cudnn.h /usr/local/cuda-9.0/include/
 # Give read access to all users
 sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
-`
+```
 
 ## 6. Do the CUDA post-install actions
 
