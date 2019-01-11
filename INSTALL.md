@@ -12,8 +12,9 @@
 
 ## 1. Install Ubuntu 18.04
 
-To see which ubuntu release is installed:
 `lsb_release -a`
+
+shows which Ubuntu release is installed
 
 ## 2. Install NVIDIA drivers
 
