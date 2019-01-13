@@ -48,6 +48,7 @@ Get CUDA from [NVIDIA](https://developer.nvidia.com/cuda-90-download-archive?tar
 
 Get CUDA 9.0, select Linux, x86_64, Ubuntu, select the 17.04 version and "runfile(local)". See [1].
 
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
 
 `sudo sh cuda_9.0.176_384.81_linux.run --override`
 
@@ -98,6 +99,8 @@ to the downloads archive page again and find version 7.0 for CUDA 9.0
 that you just installed. Download the link that says “cuDNN v7.0.5
 Library for Linux”. This will download an archive that you can unpack
 and move the contents the correct locations."
+
+wget https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/9.0_20171129/cudnn-9.0-linux-x64-v7 
 
 ```
 tar -zxvf cudnn-9.0-linux-x64-v7.tgz`
