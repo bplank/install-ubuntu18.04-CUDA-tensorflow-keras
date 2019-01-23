@@ -129,6 +129,23 @@ So that Tensorflow can find your CUDA installation and use it properly, you need
 
 `sh Anaconda3-2018.12-Linux-x86_64.sh`
 
+* Agree to the licence 
+* Say 'yes' to adding the Anaconda config to `.bashrc`
+* say 'no' to some Microsoft VSCode
+
+Make sure from now on you are loading your own Python Anaconda version, i.e., load your `.bashrc` file with:
+
+```
+source .bashrc
+```
+
+(in case you skip this and the wrong python is loaded, you might get the following error in the next step):
+```
+conda create -n py36tfnew python=3.6 anaconda
+
+CondaValueError: prefix already exists: /home/sebastian/anaconda3/envs/py36tfnew
+```
+
 ## 8. Create a python 3.6 environment
 
 Note: tensorflow does NOT work on python3.7
@@ -143,6 +160,16 @@ and activate it
 Make sure python 3.7 is loaded, by typing
 
 `python`
+
+and getting
+
+```
+python
+Python 3.7.1 (default, Dec 14 2018, 19:28:38)
+[GCC 7.3.0] :: Anaconda, Inc. on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+```
 
 
 set the `PATH` to point to the cuda-9.0/lib64 (see above) - Ideally add it to `.bashrc`
