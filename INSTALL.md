@@ -185,7 +185,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
 Make sure to choose version 1.9, don't use conda install but use pip as [1] does, and do not use `keras-gpu` (not: `conda install -c anaconda keras-gpu`, it uses to new CUDA drivers, got a mismatch). Instead we follow Step 3. Install Tensorflow with Gpu support in [2] by N.Fridman but use 1.9:
 
 ```
-conda activate py36tf
+conda activate py36tfnew
 pip install tensorflow-gpu==1.9
 ```
 
