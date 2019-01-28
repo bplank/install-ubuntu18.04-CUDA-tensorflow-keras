@@ -206,7 +206,13 @@ python
 >> K.tensorflow_backend._get_available_gpus()
 ```
 
+## 11. Cleaning up
 
+Remove the anaconda installer. 
+
+```
+rm Anaconda3-2018.12-Linux-x86_64.sh
+```
 
 # References:
 
