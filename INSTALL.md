@@ -148,7 +148,7 @@ CondaValueError: prefix already exists: /home/sebastian/anaconda3/envs/py36tfnew
 
 ## 8. Create a python 3.6 environment
 
-Note: tensorflow does NOT work on python3.7
+Note: tensorflow does NOT work on python3.7. Make sure to use python 3.6. For this reason we create a conda environment and load it afterwards.
 
 `conda create -n py36tfnew python=3.6 anaconda`
 
@@ -157,16 +157,15 @@ and activate it
 
 `conda activate py36tfnew`
 
-Make sure python 3.7 is loaded, by typing
+Make sure python 3.6 is loaded, by typing
 
 `python`
 
 and getting
 
 ```
-python
-Python 3.7.1 (default, Dec 14 2018, 19:28:38)
-[GCC 7.3.0] :: Anaconda, Inc. on linux
+Python 3.6.7 |Anaconda, Inc.| (default, Oct 23 2018, 19:16:44)
+[GCC 7.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
