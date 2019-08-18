@@ -60,12 +60,6 @@ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.
 sudo sh cuda_9.0.176_384.81_linux.run --override
 ```
 
-Update August 18, 2019: get CUDA 10:
-
-```
-wget http://developer.download.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.243_418.87.00_linux.run
-sudo sh cuda_10.1.243_418.87.00_linux.run
-```
 
 accept
 
@@ -81,6 +75,33 @@ yes (default location)
 N.B. It has the 384 flag in the name, make sure to not install the new driver as we want to use the 390.
 
 “Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81?”. Make sure you *don’t* agree to install the new driver.  Choose *no*.
+
+
+#### Update August 18, 2019 on Ubuntu 18.04 (bionic beaver) on Nvidia 430: to install CUDA 10 (first purge Blacklist for Nouveau Driver)
+
+Follow [here](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07) to blacklist nouveau driver:
+```
+Create a file at /etc/modprobe.d/blacklist-nouveau.conf with the following contents:
+
+blacklist nouveau
+options nouveau modeset=0
+
+```
+And reboot. Then [deinstall old (assumes you skip step 2 b above](https://gist.github.com/wangruohui/df039f0dc434d6486f5d4d098aa52d07) and install:
+
+```
+sudo apt-get purge nvidia*
+
+# Note this might remove your cuda installation as well
+sudo apt-get autoremove 
+```
+
+```
+wget http://developer.download.nvidia.com/compute/cuda/10.1/Prod/local_installers/cuda_10.1.243_418.87.00_linux.run
+sudo sh cuda_10.1.243_418.87.00_linux.run
+```
+
+accept (and choose all) - install 418
 
 ## 4. Check installation and add cuda to your path
 
