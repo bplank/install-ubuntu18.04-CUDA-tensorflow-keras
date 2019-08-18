@@ -31,14 +31,20 @@ If ubuntu-drivers is not found, run the following command in terminal to install
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt-get update
-sudo apt-get install nvidia-390
+--sudo apt-get install nvidia-390-- #2YP machines
+sudo apt-get install nvidia-driver-430
 ```
 
-Reboot machine
+Reboot machine: 
+```
+sudo reboot now
+```
 
 check that you have the correct driver:
 
 `nvidia-smi`
+
+if you get `NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.` install b) above (430 driver?)
 
 
 ## 3. Download CUDA from NVidia
