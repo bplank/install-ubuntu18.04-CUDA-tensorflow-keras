@@ -235,6 +235,13 @@ conda activate py36tfnew
 pip install tensorflow-gpu==1.9
 ```
 
+#### Update Aug 2019: use tensorflow 1.14 for CUDA 10 (1.9 does work for CUDA 9)
+See list [here](https://www.tensorflow.org/install/source).
+
+```
+pip install tensorflow-gpu==1.14
+```
+
 
 ## 10. Install Keras and Test installation
 
