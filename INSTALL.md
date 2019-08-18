@@ -103,6 +103,20 @@ sudo sh cuda_10.1.243_418.87.00_linux.run
 
 accept (and choose all) - install 418
 
+Afterwards, set the paths:
+
+```
+Please make sure that
+ -   PATH includes /usr/local/cuda-10.1/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-10.1/lib64, or, add /usr/local/cuda-10.1/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-10.1/bin
+To uninstall the NVIDIA Driver, run nvidia-uninstall
+
+Please see CUDA_Installation_Guide_Linux.pdf in /usr/local/cuda-10.1/doc/pdf for detailed information on setting up CUDA.
+Logfile is /var/log/cuda-installer.log
+```
+
 ## 4. Check installation and add cuda to your path
 
 Check if you see the cuda installation folder:
