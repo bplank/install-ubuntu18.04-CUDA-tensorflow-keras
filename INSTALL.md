@@ -1,3 +1,34 @@
+### Note when things go wrong (short)
+
+If there is an old installation, which no longer works:
+
+1. Remove any old `cuda` or `nvidia` package
+```
+apt list --installed | grep cuda
+
+sudo apt remove cuda-cudart-10-0 cuda-cudart-dev-10-0  cuda-license-10-0 cuda-repo-ubuntu1804  libcudart9.1
+```
+2. Fetch a fresh CUDA and install it:
+```
+ sudo sh cuda_10.2.89_440.33.01_linux.run
+```
+(it will complain if old packages are around)
+
+3. add paths to PATH and LD_LIBRARY_PATH
+
+nvidia-smi should be back
+
+### Useful
+
+```
+cat /proc/driver/nvidia/version
+```
+
+```
+ubuntu-drivers devices
+```
+
+
 ### Final working configuration:
 
 - Ubuntu 18.04
