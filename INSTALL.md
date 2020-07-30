@@ -284,7 +284,7 @@ pip install keras
 
 (instead we do not use `conda install -c conda-forge keras`)
 
-Now we can test the installation, which should show the GPU:
+Now we can test the installation, which should show the GPU [this is obsolete]
 ```
 python
 >> from keras import backend as K 
